@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <main id="app">
+      <section>
+        <div>
+          <div class="box-main">
+            <img class="todotitle" src="imgs/TODOLISTH1.png" alt="">
+            <!--<h1>To Do List</h1>*/-->
+            <div class="insert-do">
+                <input class="input-do" type="text" 
+                placeholder="Insira uma tarefa..." v-model="newTodo.text" >
+                <button @click="addTodo()"> Adicionar </button>
+                <button class="btn-del" title="Deletar Tarefas" @click="todos=[]" v-if="todos.length">x</button>
+            </div>
+            <div class="todos" v-if="todos.length">
+              <div v-for="(todo, index) in todos" :key="index" class="doline">
+                 <input
+                 class="checkinp" 
+                 type="checkbox" 
+                 v-model="todo.done" 
+                  />
+                  <span :class="{ completed: todo.done }">{{ todo.text }}</span>
+                </div>
+            </div>
+            
+            <div class="instructions">
+            <figcaption>Instruções:</figcaption>
+            <ul>
+              <li>Clique na tarefa para definir feita ou não </li>
+              <li>Clique no botão de remover para deletar as tarefas</li>
+              <li>Utilize o input para definir as suas tarefas</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="links">
+      <a href="https://github.com/GuilhermeFrance" target="_blank"><img class="git-h-img" src=https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png alt=""></a>
+      <a href="https://www.linkedin.com/in/guilherme-france-de-oliveira-santos-9435aa360/" target="_blank"><img class="lkdin-h-img" src=https://static.vecteezy.com/system/resources/previews/022/227/352/non_2x/linkedin-logo-icon-free-png.png alt=""></a>
+        <div>
+
+      </footer>
+    </main>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

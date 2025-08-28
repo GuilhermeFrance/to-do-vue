@@ -1,0 +1,150 @@
+body {
+  background:linear-gradient(45deg, #53a8cf, #ffffff9a);
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 93.7vh;
+  
+}
+
+button {
+  background-color: rgb(0, 132, 255);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+h1{
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+button:hover{
+  background-color: rgb(0, 124, 240);
+  transition: 0.3s;
+}
+
+.todos{
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-top:10px;
+  width: 270px;
+  max-height: 300px;
+  height: 100px;
+  margin-top: 10px;
+  
+
+}
+.completed{
+  color: #53a8cf;
+  transition: 0.1s;
+}
+.do{
+  margin: 0px;
+  margin-left: 10px;
+}
+.doline{
+  display: flex;
+  gap: 10px;
+}
+.checkinp{
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.instructions{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+figcaption{
+  font-weight: bold;
+  font-size: 14px;
+}
+li{
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 80% ;
+}
+.insert-do {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+.input-do {
+  height: 28px;
+  width: 180px;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid rgb(175, 175, 175);
+}
+.btn-del{
+  font-weight: bolder;
+  width: 30px;
+  font-size: 18px;
+  padding: 5px;
+   font-family: 'Open Sans', sans-serif;
+   background-color: rgb(236, 75, 75);
+}
+.btn-del:hover{
+
+   background-color: rgb(209, 25, 25);
+   transition: 0.2s;
+}
+.todotitle{
+  width: 45%;
+}
+.box-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(229, 238, 238);
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19)
+}
+
+.git-h-img {
+  width: 30px;
+  height: 30px;
+}
+
+img:hover{
+    opacity: 80%;
+    transition: 0.5s;
+}
+.lkdin-h-img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(1) invert(1);
+}
+
+.links {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 6px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  background-color: rgb(43, 43, 43);
+  height: 60px;
+}
