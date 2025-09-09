@@ -21,7 +21,7 @@
             <div class="insert-do">
                 <input class="input-do" type="text" 
                 placeholder="Insira uma tarefa..." v-model="newTodo.text" >
-                <button @click="addTodo()"> Adicionar </button>
+                <button @click="addTodo()" v-if="todos.length<16"> Adicionar </button>
                 <button class="btn-del" title="Deletar Tarefas" @click="todos=[]" v-if="todos.length">x</button>
             </div>
             <div class="todos" v-if="todos.length">
